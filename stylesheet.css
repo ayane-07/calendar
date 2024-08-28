@@ -93,7 +93,7 @@ body {
     color: #fff;
 }
 
-.red-theme .days-of-week, .blue-theme .days-of-week, .pink-theme .days-of-week, .green-theme .days-of-week, .yellow-theme .days-of-week, .black-theme .days-of-week {
+.red-theme .days-of-week {
     background-color: #ffe6e6;
 }
 
@@ -140,3 +140,4 @@ body {
 .black-theme .date {
     border: 1px solid #333;
 }
+
