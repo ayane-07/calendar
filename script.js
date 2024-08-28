@@ -39,8 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function applyTheme(theme) {
+        // Remove all theme classes
         const themes = ['red', 'blue', 'pink', 'green', 'yellow', 'black'];
-        calendarElement.classList.remove(...themes);
+        themes.forEach(t => calendarElement.classList.remove(`${t}-theme`));
+        // Add the selected theme class
         calendarElement.classList.add(`${theme}-theme`);
     }
     
@@ -52,3 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
     generateCalendar(currentMonth, currentYear);
     applyTheme(themeSelect.value); // Apply initial theme
 });
+
