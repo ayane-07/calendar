@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カレンダー</title>
+ <link rel="stylesheet" href="https://ayane-07.github.io/calendar/stylesheet.css">
+</head>
+<body>
+    <div class="controls">
+        <label for="themeSelect">テーマを選択:</label>
+        <select id="themeSelect">
+            <option value="red">赤</option>
+            <option value="blue">青</option>
+            <option value="pink">ピンク</option>
+            <option value="green">緑</option>
+            <option value="yellow">黄色</option>
+            <option value="black">黒</option>
+        </select>
+    </div>
+    <div class="calendar" id="calendar">
+        <div class="header">
+            <span class="month" id="monthYear"></span>
+        </div>
+        <div class="days-of-week">
+            <div class="day">日</div>
+            <div class="day">月</div>
+            <div class="day">火</div>
+            <div class="day">水</div>
+            <div class="day">木</div>
+            <div class="day">金</div>
+            <div class="day">土</div>
+        </div>
+        <div class="dates" id="dates"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
