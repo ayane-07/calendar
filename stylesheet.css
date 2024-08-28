@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.controls {
+    margin: 20px;
+}
+
+#themeSelect {
+    padding: 5px;
+}
+
+.calendar {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.date:hover {
+    cursor: pointer;
+}
+
+.today {
+    background-color: #ffcccb;
+    font-weight: bold;
+}
+
+.red-theme .header {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.blue-theme .header {
+    background-color: #4d4dff;
+    color: #fff;
+}
+
+.pink-theme .header {
+    background-color: #ff66b2;
+    color: #fff;
+}
+
+.green-theme .header {
+    background-color: #66ff66;
+    color: #fff;
+}
+
+.yellow-theme .header {
+    background-color: #ffff66;
+    color: #333;
+}
+
+.black-theme .header {
+    background-color: #333;
+    color: #fff;
+}
+
+.red-theme .days-of-week, .blue-theme .days-of-week, .pink-theme .days-of-week, .green-theme .days-of-week, .yellow-theme .days-of-week, .black-theme .days-of-week {
+    background-color: #ffe6e6;
+}
+
+.blue-theme .days-of-week {
+    background-color: #e6e6ff;
+}
+
+.pink-theme .days-of-week {
+    background-color: #ffe6f2;
+}
+
+.green-theme .days-of-week {
+    background-color: #e6ffe6;
+}
+
+.yellow-theme .days-of-week {
+    background-color: #ffffe6;
+}
+
+.black-theme .days-of-week {
+    background-color: #e6e6e6;
+}
+
+.red-theme .date {
+    border: 1px solid #ff4d4d;
+}
+
+.blue-theme .date {
+    border: 1px solid #4d4dff;
+}
+
+.pink-theme .date {
+    border: 1px solid #ff66b2;
+}
+
+.green-theme .date {
+    border: 1px solid #66ff66;
+}
+
+.yellow-theme .date {
+    border: 1px solid #ffff66;
+}
+
+.black-theme .date {
+    border: 1px solid #333;
+}
